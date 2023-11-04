@@ -1,0 +1,40 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "age": 20,
+        "major": "Computer Science"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 22,
+        "major": "Engineering"
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "age": 21,
+        "major": "Mathematics"
+      }
+    ],
+    "courses": [
+      {
+        "id": 101,
+        "title": "Introduction to Programming",
+        "instructor": "Professor Smith"
+      },
+      {
+        "id": 102,
+        "title": "Web Development Basics",
+        "instructor": "Professor Johnson"
+      },
+      {
+        "id": 103,
+        "title": "Data Structures and Algorithms",
+        "instructor": "Professor Brown"
+      }
+    ]
+  }
+  
