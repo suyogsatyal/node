@@ -1,0 +1,125 @@
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    background-color: #242424;
+    z-index: 999;
+    border-bottom: gray 2px solid;
+}
+
+.navDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li{
+    padding:0 10px;
+}
+
+.nav a{  
+    color: rgb(83, 223, 223)!important;
+    text-decoration-color: none!important;
+    text-decoration: none!important;
+}
+
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 250px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 30px;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 10px;
+    padding: 7px 20px;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-70%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-image: linear-gradient(to bottom, #242424, #242424);
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+
+  .nameList {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+  
+  /* Medium devices */
+  @media screen and (max-width: 1024px) {
+    .nameList {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  /* Smaller/Mobile devices */
+  @media screen and (max-width: 768px) {
+    .nameList {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  /* Extra small devices */
+  @media screen and (max-width: 480px) {
+    .nameList {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  
+
+.nameList li{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 80px;
+  border-radius: 20px;
+  border: 2px gray solid;
+
+}
+
+.edit{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  display: none;
+  /* height:30px ; */
+}
+.nameList li:hover .edit{
+  display: block;
+}
